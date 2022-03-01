@@ -1,0 +1,15 @@
+.container {
+    height: 140px;
+    padding: 15px;
+    background: plum;
+    border: black;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.item {
+    width: 60px;
+    height: 60px;
+    border: 4px solid blue;
+    background: lightblue;
+}
