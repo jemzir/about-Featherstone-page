@@ -12,6 +12,17 @@
     padding-left: 1em;
     padding-right: 1em;
     justify-content: space-evenly;
+    /*The bottom is copied code to try and make fading animation occur*/
+    animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
 }
 
 .item {
