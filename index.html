@@ -9,14 +9,32 @@
     <!-- making use of Nike's about me for a basis and as well as using https://slidesgo.com/theme/camping-weekend-campaign#search-camping&position-2&results-6 for the borders to fit camping design-->
 </head>
 <body>
-    <div class="containter">
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-    </div>
+    <div class="w3-content w3-section media-container"  style="width: 1500px">
+        <img class="mySlides" src="images/joshua-tree-ga21be153b_1920.jpg" style="width:100%">
+        <img class="mySlides" src="images/pexels-teemu-r-1840394.jpg" style="width:100%">
+        <img class="mySlides" src="images/forest-g8cfff829e_1920.jpg" style="width:100%">
+      </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 5000); // Change image every 5 seconds
+        }
+        </script>
     <div>
         <h1>ABOUT FEATHERSTONE</h1>
-        <p>place to talk about featherstone company</p>
+        <div>
+        <p>Featherstone is built on the core belief that time spent in the outdoors is good for the soul, and our company mission is to inspire individuals to experience that. How do we do that? By providing quality, accessible, performance products to be the catalyst for those who wish to seek more to life. We’re all about catering to different lifestyles because the outdoors is truly what you make of it. </p>
+        </div>
     </div>
 </body>
 </html>

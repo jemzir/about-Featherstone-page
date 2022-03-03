@@ -1,10 +1,17 @@
 .container {
-    height: 140px;
+    width: auto;
     padding: 15px;
-    background: plum;
-    border: black;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
+}
+
+.media-container {
+    display: flex;
+    padding-left: 1em;
+    padding-right: 1em;
+    justify-content: space-evenly;
 }
 
 .item {
