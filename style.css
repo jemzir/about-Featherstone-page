@@ -1,10 +1,10 @@
 .container {
     width: auto;
-    padding: 15px;
+    padding: 5px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .media-container {
@@ -13,7 +13,7 @@
     padding-right: 1em;
     justify-content: space-evenly;
     /*The bottom is copied code to try and make fading animation occur*/
-    animation: fadeInAnimation ease 3s;
+    animation: fadeInAnimation ease-in 5s;
             animation-iteration-count: 1;
             animation-fill-mode: forwards;
         }
