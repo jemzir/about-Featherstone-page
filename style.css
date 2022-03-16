@@ -2,19 +2,30 @@
     display: flex;
     flex-direction: column;
     padding: 32px;
+    justify-content: center;
 }
 
 .top-container, .mid-container, .bot-container {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.top-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.mid-container {
+    background-color: rgb(222, 222, 222);
+    gap: 8px;
+    flex-direction: column;
 }
 
 .media-container {
     display: flex;
-    padding-left: 1em;
-    padding-right: 1em;
     justify-content: space-evenly;
-    /*The bottom is copied code to try and make fading animation occur*/
+    /*The fading is copied code to try and make fading animation occur*/
     animation: fadeInAnimation ease-in 5s;
             animation-iteration-count: 1;
             animation-fill-mode: forwards;
