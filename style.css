@@ -20,13 +20,26 @@
     background-color: rgb(222, 222, 222);
     gap: 8px;
     flex-direction: column;
+    padding: 10px;
 }
 
-.mid-container img {
+.mid-container__top img, .mid-container__bot img {
     border: 1px solid;
     padding: 10px;
-    box-shadow: 5px 10px red;
+    box-shadow: -10px 10px red;
 }
+
+.mid-container__mid img {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 10px 10px red;
+}
+
+.mid-container. .mid-container__top {
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
 
 .media-container {
     display: flex;
