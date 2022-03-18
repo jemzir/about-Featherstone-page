@@ -18,7 +18,7 @@
 
 .mid-container {
     background-color: rgb(222, 222, 222);
-    gap: 8px;
+    gap: 100px;
     flex-direction: column;
     padding: 10px;
     flex-wrap: wrap;
@@ -38,6 +38,7 @@
 
 .mid-container__top, .mid-container__mid, .mid-container__bot {
     display: flex;
+    gap: 200px;
 }
 .media {
     flex-shrink: 0;
@@ -46,6 +47,14 @@
 .text {
     flex: 1;
     flex-direction: column;
+}
+
+.underline {
+    border: 0;
+    border-top: 2px solid red;
+    display: inline-block;
+    width: 50px;
+    flex-shrink: 0;
 }
 
 .media-container {
