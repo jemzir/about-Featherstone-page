@@ -21,6 +21,7 @@
     gap: 8px;
     flex-direction: column;
     padding: 10px;
+    flex-wrap: wrap;
 }
 
 .mid-container__top img, .mid-container__bot img {
@@ -35,11 +36,17 @@
     box-shadow: 10px 10px red;
 }
 
-.mid-container. .mid-container__top {
-    flex-direction: row;
-    flex-wrap: nowrap;
+.mid-container__top, .mid-container__mid, .mid-container__bot {
+    display: flex;
+}
+.media {
+    flex-shrink: 0;
 }
 
+.text {
+    flex: 1;
+    flex-direction: column;
+}
 
 .media-container {
     display: flex;
